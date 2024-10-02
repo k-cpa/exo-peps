@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/******************** GENERAL ********************/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 200;
+}
+
+.btn {
+    position: relative;
+    border: 2px solid rgb(243, 92, 117) ;
+    color:  rgb(243, 92, 117);
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 8px 20px;
+}
+
+.btn:hover {
+    background-color: rgb(243, 92, 117);
+    color: white;
+}
+/******************** HEADER - FOOTER ********************/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 70px;
+    margin-left: 30px;
+    padding: 10px;
+
+}
+
+nav ul {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul a {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+li:last-child a {
+    border-right: none;
+}
+
+/******************** partie main ********************/
+
+main {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/************* BANNIERE TITRE *************/
+.title_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    background-image: url("../../img/photo-1556139943-4bdca53adf1e.jpg");
+    background-size: cover;
+}
+
+.elements_banner {
+    display: flex;
+    width: 70rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements_banner h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.elements_banner span {
+    display: block;
+}
+
+.elements_banner a {
+    position: relative;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: rgb(243, 92, 117);
+    padding: 15px 40px;
+    border: 1px solid rgb(243, 92, 117);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.elements_banner a:hover {
+    background-color: white;
+    color: rgb(243, 92, 117);
+    border: 1px solid rgb(243, 92, 117);
+}
+
+/************* PARTIE APPROACH *************/
+
+#approach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.approach_title h2 {
+    text-transform: uppercase;
+    margin-bottom: .3rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.approach_title p {
+    font-weight: 300;
+}
+
+.approach_core {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 2rem;
+    padding: 0 3%;
+}
+
+#approach img {
+    width: 50%;
+    height: auto; 
+    /* margin-right: 2.2rem; */
+}
+
+.approach_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 3rem; */
+    width: 50%;
+    gap: 2rem;
+}
+
+.approach_text > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
+    text-align: start;
+    gap: 1rem;
+}
+
+.approach_text p span {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.approach_text ul li {
+    width: 90%;
+}
+
+.approach_text ul li::before {
+    content:"-"
+}
+
+/************* PARTIE LEVERAGE *************/
+
+#leverage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.lev_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lev_title img {
+    margin-bottom: 2rem;
+}
+
+.lev_title h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+
+.lev_title span {
+    font-weight: bold;
+}
+
+.lev_assets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lev_assets img {
+    margin-bottom: .5rem;
+}
+
+.lev_assets h3 {
+    margin-bottom: .5rem;
+}
+
+.lev_assets h3 span {
+    display: block;
+}
+
+.lev_assets p span {
+    display: block;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.lev_assets > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+}
+
+.cards_assets {
+    width: 20%;
+    margin-bottom: 5rem;
+}
+
+
+
+/****** UN PEU BANCAL - JE N'AI PAS TROUVÉ
+D'AUTRE SOLUTION (CE QUI DÉCONNE SURTOUT) 
+POUR L'ALIGNER VISUELLEMENT *******/
+.right_bottom {
+    padding-bottom: 2rem;
+}
+
+/********** PARTIE BACKING **************/
+
+
+#backing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_backing {
+    margin-bottom: 2rem;
+}
+
+.title_backing h2 {
+    font-size: 1.7rem;
+}
+
+.text_backing span{
+    display: block;
+    font-weight: bold;
+}
+
+.cards_backing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 4rem;
+    margin-top: 3rem;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.in_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.in_card h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 3.5rem;
+}
+
+.in_card p {
+    font-size: 1.3rem;
+    width: 80%;
+    font-weight: 400;
+    padding: .5rem;
+    margin-bottom: 1rem;
+} 
+
+.in_card span {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+/****** COULEUR ::BEFORE SPANS POUR OBTENIR LE CARRÉ DE COULEUR DÉCALÉ 
+IMPORTANT D'AVOIR LE FIT CONTENT SUR L'ÉLÉMENT INITIAL ET LE  ******/
+
+.in_card span::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    width: auto;
+    top: 60%;
+    bottom: -3px;
+    opacity: 0.6;
+    z-index: -1;
+    
+}
+
+/*** COULEUR ::BEFORE DES IN_CARD SPANS ******/
+
+.cd_talents span::before {
+    background-color: rgb(243, 169, 182);
+}
+
+.cd_carreer span::before {
+    background-color: rgb(224, 224, 7);
+}
+
+.cd_force span::before {
+    background-color: rgb(167, 1, 167);
+}
+.in_card a {
+    margin-top: auto;
+} 
+
+/********** PARTIE TESTIMONY **************/
+
+
+#testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_testimony img {
+    width: 24rem;
+    margin-top: 1rem;
+    margin-bottom: 3.2rem;
+}
+
+.title_testimony h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.2rem;
+}
+
+.container_testimony {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.cards_testimony {
+    position: relative;
+    border: 1px solid rgb(140, 139, 139);
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.testy_title {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.testy_title h4 {
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.cards_testimony p {
+    font-size: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img_wrap {
+    position: absolute;
+    left: 50%; 
+    top: -65px; 
+    width: 6rem;
+    height: auto;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 10px;
+}
+
+.img_wrap img {
+    width: 100%;
+    height: auto;
+}
+
+/********** PARTIE BLOG **************/
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_blog {
+    margin: 4rem;
+}
+
+.title_blog h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#blog article {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    margin: 1rem;
+    /* width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem; */
+}
+
+.imgPower_wrapper {
+    grid-column: 1;
+    background-color: green;
+}
+.blog_elements {
+    grid-column: 2/4;
+    text-align: left;
+    background: red;
+}
+
+
+#blog img {
+    width: 23rem;
+    height: auto;
+}
+
+
+/****************** RESPONSIVE ******************/
+
+
+/****************** 1330px ******************/
+
+@media screen and (max-width: 1330px) {
+
+/****** TESTIMONY 1330 px ******/
+
+    .container_testimony {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .testy_title {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .cards_testimony p {
+        margin-bottom: 1rem;
+    }
+}
+
+/****************** 1190px ******************/
+
+@media screen and (max-width: 1190px) {
+
+/****** BANNER 1190px ******/
+
+
+    .title_banner {
+        height: 50vh;
+    }
+
+    .elements_banner h2 {
+        font-size: 4rem;
+    }
+
+   .elements_banner a {
+    font-size: 1rem;
+    padding: 12px 20px;
+   }
+
+/****** APPROACH 1190 px ******/
+
+    .approach_core {
+        gap: 2em;
+    }
+
+    .approach_text {
+        gap: 1rem;
+    }
+
+    .approach_text > div {
+        gap: .5rem;
+    }
+
+/****** LEVERAGE 1190 px ******/
+
+.lev_assets > div {
+    gap: 10rem;
+}
+
+    .cards_assets {
+        width: 30%;
+        margin-bottom: 4rem;
+    }
+
+    .in_card h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+/****** BACKING 1190 px ******/
+
+    .title_backing {
+        margin-bottom: 1rem;
+    }
+
+    .cards_backing {
+        margin-top: 2.5rem;
+    }
+
+    .in_card h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+/****** TESTIMONY 1190 px ******/
+
+
+    .title_testimony img {
+        margin-bottom: 2rem;
+    }
+
+    .title_blog {
+        margin: 3rem
+    }
+
+}
+
+/****************** 991px ******************/
+
+@media screen and (max-width: 991px) {
+
+/****** HEADER / BANNER 991 px ******/
+
+
+    nav ul a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .title_banner {
+        height: 40vh;
+    }
+
+    .elements_banner h2 {
+        font-size: 3rem;
+    }
+
+   .elements_banner a {
+    font-size: 1rem;
+    padding: 8px 15px;
+   }
+
+/****** APPROACH 991 px ******/
+
+#approach {
+    margin-top: 2rem;
+}
+
+#approach img {
+    width: 60%;
+}
+
+.approach_title h2 {
+    font-size: 1.7rem;
+}
+
+.approach_core {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.approach_text {
+    width: 80%;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+/****** LEVERAGE 991 px ******/
+
+#leverage {
+    margin-top: 2rem;
+    }
+
+.lev_title h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+    /* .lev_assets > div {
+    gap: 10rem;
+}
+
+    .cards_assets {
+        width: 30%;
+        margin-bottom: 4rem;
+    }
+
+    .in_card h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    } */
+
+
+
+/****** BACKING 991px ******/
+
+.cards_backing {
+    gap: .5rem;
+}
+
+/****** TESTIMONY 991px ******/
+
+.container_testimony {
+    gap: 2rem;
+}
+
+.testy_title {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.cards_testimony p {
+    margin-bottom: 1rem;
+}
+
+
+}
+
+/****************** 750px ******************/
+
+@media screen and (max-width: 750px) {
+
+/****** HEADER / BANNER 750 px ******/
+
+    nav ul {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav img {
+        position: absolute;
+        left: 0;
+        top: 2%;
+    }
+
+    nav ul a {
+        display: block;
+        border-right: none;
+        padding: 2px;
+    }
+
+/****** APPROACH 750 px ******/
+   
+}
+
+
+
+
