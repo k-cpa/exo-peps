@@ -458,6 +458,7 @@ IMPORTANT D'AVOIR LE FIT CONTENT SUR L'ÉLÉMENT INITIAL ET LE  ******/
 }
 
 /********** PARTIE BLOG **************/
+/* Problème avec les images et la border ... Je ne m'en sors pas */
 
 #blog {
     display: flex;
@@ -502,6 +503,7 @@ IMPORTANT D'AVOIR LE FIT CONTENT SUR L'ÉLÉMENT INITIAL ET LE  ******/
 .imgPower_wrapper {
     grid-column: 1/1;
     padding-top: 1rem;
+    align-self: flex-end;
 }
 
 .imgPower_wrapper img {
@@ -523,7 +525,6 @@ IMPORTANT D'AVOIR LE FIT CONTENT SUR L'ÉLÉMENT INITIAL ET LE  ******/
 
 .bottomBlog_lines {
     padding: 2rem;
-    margin-top: 2rem;
 }
 
 .imgActiv_wrapper {
@@ -547,6 +548,22 @@ IMPORTANT D'AVOIR LE FIT CONTENT SUR L'ÉLÉMENT INITIAL ET LE  ******/
     padding-left: 2rem;
     padding-right: 2rem;
 }  
+
+/* ELEMENTS COMMUNS BLOG ELEMENTS */
+
+.blog_elements a{
+    position: relative;
+    border: 2px solid rgb(243, 92, 117) ;
+    color:  rgb(243, 92, 117);
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 8px 20px;
+}
+
+.blog_elements a:hover {
+    background-color: rgb(243, 92, 117);
+    color: white;
+}
 
 .blog_elements {
     display: flex;
@@ -647,6 +664,11 @@ footer {
     #blog img {
         width: 90%;
     }
+
+#blog article h3 {
+    font-size: 1.3rem;
+}
+
 }
 
 /****************** 1190px ******************/
@@ -844,21 +866,22 @@ header nav ul a{
 
 /****** BLOG 991 px ******/
 
-#blog img {
-    width: 100%;
+#blog article {
+    width: 95%;
 }
 
-.topBlog_lines {
-    padding: 1.5rem;
+#blog img {
+    display: none;
 }
 
 .power_elements, .activ_elements {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    grid-column: 1/4;
+    text-align: center;
+    margin-left: 0rem;
 }
 
-#blog article {
-    width: 95%;
+.blog_elements {
+    align-items: center;
 }
 
 
@@ -961,20 +984,10 @@ header nav ul a{
 
 /****** BLOG 750 px ******/
 
-
-#blog img {
-    display: none;
+#blog article {
+    padding: 1.5rem;
 }
 
-.power_elements, .activ_elements {
-    grid-column: 1/4;
-    text-align: center;
-    margin-left: 0rem;
-}
-
-.blog_elements {
-    align-items: center;
-}
 
 /****** FOOTER 991 px ******/
 
